@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Creative single page site</title>
+</head>
+<body>
+
+  <nav class="navbar container">
+    <img src="./assets/desktop/logo.svg" alt="logo" class="navbar__logo">
+    <button class="navbar__open">
+      <img src="./assets/mobile/icon-hamburger.svg" alt="toggle">
+    </button>
+    <button class="navbar__close hidden">
+      <img src="./assets/mobile/icon-cross.svg" alt="toggle">
+    </button>
+    <div class="navbar__links">
+      <a href="" class="navbar__links-item">About</a>
+      <a href="" class="navbar__links-item">Service</a>
+      <a href="" class="navbar__links-item">Projects</a>
+      <button class="navbar__btn btn-cta">Schedule a Call</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <picture class="hero__image">
+        <source media="(min-width:1024px)" srcset="./assets/desktop/image-hero.jpg">
+        <source media="(min-width:768px)" srcset="./assets/tablet/image-hero.jpg">
+        <img src="./assets/mobile/image-hero.jpg" alt="hero">
+      </picture>
+
+      <div class="hero__content container">
+        <h1 class="hero__title">Branding & website design agency</h1>
+        <p class="hero__text">We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
+        <button class="hero__btn btn-cta">Learn More</button>
+      </div>
+    </section>
+
+    <section class="design">
+      <picture class="design__image">
+        <source media="(min-width:1024px)" srcset="./assets/desktop/image-strategic.jpg">
+        <source media="(min-width:768px)" srcset="./assets/tablet/image-strategic.jpg">
+        <img src="./assets/mobile/image-strategic.jpg" alt="design">
+      </picture>
+
+      <div class="design__content container">
+        <img src="./assets/desktop/bg-pattern-wave-red.svg" alt="wave icon" class="design__icon icon">
+        <h2 class="design__title"><span>Design</span> is strategic.</h2>
+        <p class="design__text">“A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients.”</p>
+        <button class="design__btn">Schedule a Call</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="approach__header">
+        <h2 class="approach__title container">Our approach for creating a winning brand</h2>
+      </div>
+      <div class="approach__list container">
+        <div class="approach__item">
+          <p class="approach__item-number">01</p>
+          <h3 class="approach__item-title">Brand Strategy</h3>
+          <p class="approach__item-text">Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key.</p>
+        </div>
+        <div class="approach__item">
+          <p class="approach__item-number">02</p>
+          <h3 class="approach__item-title">Brand Design</h3>
+          <p class="approach__item-text">Keeping the brand design unique and meaningful helps in communicating the brand’s value effectively.</p>
+        </div>
+        <div class="approach__item">
+          <p class="approach__item-number">03</p>
+          <h3 class="approach__item-title">Web Design</h3>
+          <p class="approach__item-text">A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.</p>
+        </div>
+      </div>
+      <div class="slider__images">
+        <div class="slider__image open" data-slide="0">
+          <picture>
+            <source media="(min-width:1024px)" srcset="./assets/desktop/image-slide-1.jpg">
+            <source media="(min-width:768px)" srcset="./assets/tablet/image-slide-1.jpg">
+            <img src="./assets/mobile/image-slide-1.jpg" alt="design">
+          </picture>
+          <div class="slider__image-details">
+            <p class="slider__image-details-title">Lean Product Roadmap</p>
+            <p class="slider__image-details-year">2019 Project</p>
+          </div>
+        </div>
+        <div class="slider__image" data-slide="1">
+          <picture>
+            <source media="(min-width:1024px)" srcset="./assets/desktop/image-slide-2.jpg">
+            <source media="(min-width:768px)" srcset="./assets/tablet/image-slide-2.jpg">
+            <img src="./assets/mobile/image-slide-2.jpg" alt="design">
+          </picture>
+          <div class="slider__image-details">
+            <p class="slider__image-details-title">New Majestic Hotel</p>
+            <p class="slider__image-details-year">2018 Project</p>
+          </div>
+        </div>
+        <div class="slider__image" data-slide="2">
+          <picture>
+            <source media="(min-width:1024px)" srcset="./assets/desktop/image-slide-3.jpg">
+            <source media="(min-width:768px)" srcset="./assets/tablet/image-slide-3.jpg">
+            <img src="./assets/mobile/image-slide-3.jpg" alt="design">
+          </picture>
+          <div class="slider__image-details">
+            <p class="slider__image-details-title">Crypto Dashboard</p>
+            <p class="slider__image-details-year">2016 Project</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider__controls">
+        <div class="slider__controls-container container">
+          <img src="./assets/desktop/bg-pattern-wavy-white.svg" alt="wave icon" class="slider__controls-icon icon">
+          <div class="slider__titles">
+            <h2 class="slider__title open" data-slide="0">Brand naming & guidelines</h2>
+            <h2 class="slider__title" data-slide="1">Brand identity & merchandise</h2>
+            <h2 class="slider__title" data-slide="2">Brand identity & web design</h2>
+          </div>
+          <div class="slider__controls-buttons">
+            <button class="slider__controls-buttons-left">
+              <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(-1 0 0 1 40 0)" stroke="#F94F4F" fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="19.5"/><path stroke-width="2" d="M17.5 15l5 5-5 5"/></g></svg>
+            </button>
+            <button class="slider__controls-buttons-right">
+              <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g stroke="#F94F4F" fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="19.5"/><path stroke-width="2" d="M17.5 15l5 5-5 5"/></g></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <img src="./assets/desktop/bg-pattern-wave-red.svg" alt="wave icon" class="footer__icon icon">
+    <h2 class="footer__text">Let's build something great together.</h2>
+    <button class="footer__btn btn-cta">Schedule a Call</button>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

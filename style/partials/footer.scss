@@ -1,0 +1,54 @@
+@import '../variables';
+
+.footer {
+  padding-block: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-top: 4.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    padding-block: 7.5rem;
+  }
+
+  &__text {
+    @media (min-width: $tablet) {
+      width: 400px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 635px;
+    }
+  }
+
+  &__btn {
+    font-size: 1rem;
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    @media (min-width: $tablet) {
+      align-self: auto;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+      left: -200px;
+      top: 154px;
+    }
+  }
+}

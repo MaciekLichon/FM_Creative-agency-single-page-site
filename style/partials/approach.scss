@@ -1,0 +1,91 @@
+@import '../variables';
+
+.approach {
+
+  &__header {
+    background-color: $clr-red;
+    color: $clr-white;
+
+    @media (min-width: $tablet) {
+      background-color: transparent;
+      color: $clr-black;
+      padding-right: 0;
+      position: relative;
+    }
+  }
+
+  &__title {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      padding-block: 0;
+      top: 15.375rem;
+      height: 350px;
+      width: 390px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 20rem;
+      width: 560px;
+      height: auto;
+    }
+
+    @media (min-width: $desktop-l) {
+      left: 10.25rem;
+      padding: 0;
+      top: 25rem;
+    }
+  }
+
+  &__list {
+    background-color: $clr-red;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-bottom: 6rem;
+
+    @media (min-width: $tablet) {
+      padding-block: 7.5rem;
+    }
+
+    @media (min-width: $desktop-l) {
+      padding-block: 12.5rem;
+      padding-right: 6.625rem;
+      padding-left: 17.75rem;
+      gap: 3.5rem;
+    }
+  }
+
+  &__item {
+    color: $clr-white;
+    position: relative;
+
+    &-number {
+      font-size: 5rem;
+      line-height: 1.1;
+      opacity: 0.25;
+      font-weight: $fw-bold;
+    }
+
+    &-title {
+      position: absolute;
+      top: 2.75rem;
+      left: 0;
+      margin-left: 1rem;
+
+      @media (min-width: $desktop) {
+        margin-left: 3.75rem;
+      }
+    }
+
+    &-text {
+      margin-left: 1rem;
+
+      @media (min-width: $desktop) {
+        margin-left: 3.75rem;
+      }
+    }
+  }
+}

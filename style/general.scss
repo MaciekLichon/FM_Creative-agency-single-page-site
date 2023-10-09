@@ -1,0 +1,94 @@
+@import 'variables';
+
+body {
+  font-size: $fs-regular;
+  font-weight: $fw-regular;
+  color: $clr-black;
+  font-family: $ff-regular;
+  background-color: $clr-white;
+
+  @media (min-width: $desktop) {
+    font-size: $fs-regular-l;
+  }
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 1.5rem;
+
+  @media (min-width: $tablet) {
+    padding: 0 2.5rem;
+  }
+}
+
+h1 {
+  font-size: $fs-h1-s;
+  line-height: $lh-h1;
+  font-weight: $fw-bold;
+
+  @media (min-width: $tablet) {
+    font-size: $fs-h1-m;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: $fs-h1-l;
+  }
+}
+
+h2 {
+  font-size: $fs-h2-s;
+  line-height: $lh-h2;
+  font-weight: $fw-bold;
+
+  @media (min-width: $desktop) {
+    font-size: $fs-h2-l;
+  }
+}
+
+h3 {
+  font-size: $fs-h3-s;
+  line-height: $lh-h3;
+  font-weight: $fw-bold;
+
+  @media (min-width: $desktop) {
+    font-size: $fs-h3-l;
+  }
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-cta {
+  background-color: $clr-red;
+  color: $clr-white;
+  font-weight: $fw-bold;
+  padding: 1.5rem 2.5rem;
+
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $clr-red-hover;
+  }
+}
+
+.icon {
+  position: absolute;
+  width: 63px;
+
+  @media (min-width: $desktop) {
+    width: 135px;
+  }
+}

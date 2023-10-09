@@ -1,0 +1,26 @@
+@import '../variables';
+
+.grid {
+  display: grid;
+
+  @media (min-width: $tablet) {
+    margin-top: -120px;
+    position: relative;
+    grid-template-columns: 330px 1fr;
+
+    .slider__controls {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -150px;
+    grid-template-columns: 450px 1fr;
+  }
+
+  @media (min-width: $desktop-l) {
+    margin-top: -200px;
+    grid-template-columns: 545px 1fr;
+  }
+}

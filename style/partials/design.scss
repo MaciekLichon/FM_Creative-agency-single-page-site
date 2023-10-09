@@ -1,0 +1,119 @@
+@import '../variables';
+
+.design {
+  margin-top: 6rem;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-top: 0;
+  }
+
+  &__image {
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 270px;
+
+      @media (min-width: $tablet) {
+        max-height: none;
+        width: auto;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      flex-basis: 50%;
+    }
+
+    @media (min-width: $desktop-l) {
+      flex-basis: auto;
+      flex-shrink: 0;
+    }
+  }
+
+
+  &__content {
+    background-color: $clr-dark;
+    position: relative;
+    padding-block: 4.5rem;
+
+    @media (min-width: $tablet) {
+      padding-top: 7.5rem;
+      padding-bottom: 0;
+      padding-left: 4.375rem;
+    }
+
+    @media (min-width: $desktop) {
+      flex: 1;
+      padding-left: 6rem;
+    }
+
+    @media (min-width: $desktop-l) {
+      padding: 12.5rem 6.625rem 0 9.625rem;
+    }
+  }
+
+  &__icon {
+    left: 1.5rem;
+    top: -15px;
+
+    @media (min-width: $tablet) {
+      top: 145px;
+      left: -32px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 234px;
+      left: -67px;
+    }
+  }
+
+  &__title {
+    color: $clr-white;
+
+    @media (min-width: $tablet) {
+      padding-right: 2rem;
+    }
+
+    span {
+      color: $clr-red;
+    }
+  }
+
+  &__text {
+    color: $clr-white;
+    margin-top: 1.5rem;
+
+    @media (min-width: $tablet) {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 2.75rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 2.5rem;
+    color: $clr-red;
+    font-weight: $fw-bold;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $clr-red;
+
+    transition: border-color 0.3s, color 0.3s;
+
+    @media (min-width: $tablet) {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 3rem;
+    }
+
+    &:hover {
+      color: $clr-red-hover;
+      border-color: $clr-red-hover;
+    }
+  }
+}
